@@ -1,0 +1,107 @@
+/* ==================== Base ==================== */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* ==================== Header ==================== */
+#header {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 20px auto;
+}
+
+#logo {
+    color: blue;
+}
+
+#head-bar {
+    display: flex;
+}
+
+#head-bar > li {
+    margin-left: 20px;
+}
+
+/* ==================== Contents ==================== */
+#main-img {
+    display: flex;
+    margin: 0 auto;
+}
+
+#content-top > .content-inner {
+    display: flex;
+    justify-content: space-around;
+    width: 1280px;
+    margin: 40px auto;
+}
+
+#content-top > .content-inner > img {
+    padding-right: 15px;
+}
+
+#content-top > .content-inner > ul {
+    padding-right: 140px;
+}
+
+#content-down {
+    background-color: #eeeeee;
+}
+
+#content-down > .content-inner {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 35px 50px;
+}
+
+#content-down > .content-inner > ul {
+    padding: 0px 30px;
+}
+
+#content-down > ul > li {
+    display: flex;
+}
+
+.images {
+    width: 200px;
+    height: 100px;
+}
+
+/* ==================== Footer ==================== */
+#footer {
+    background-color: #292c32;
+    color: white;
+}
+
+#footer-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+#footer-title {
+    font-weight: bold;
+}
+
+#footer-icon {
+    display: flex;
+}
+
+#footer-icon > li {
+    margin-left: 10px;
+}
