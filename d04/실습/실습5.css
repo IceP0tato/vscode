@@ -1,0 +1,42 @@
+* {
+    background-color: pink;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.title {
+    width: 300px;
+    margin: 20px auto; /* Don't forget the auto */
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.content {
+    padding: 15px;
+}
+
+#image { /* 이미지 편집됨 (정사각형), width height 값을 동일하게 하는 것도 가능 */
+    width: 220px;
+    border-radius: 300px;
+}
+
+.button {
+    width: 350px;
+    height: 60px;
+    margin: 8px;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #87ceeb;
+    color: white;
+}

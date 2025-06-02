@@ -1,0 +1,47 @@
+* {
+    border: 1px solid red;
+}
+
+.s1 {
+    display: inline; /* 한 줄에 해당 구역 포함. width, height 적용 불가. 여백은 좌/우만 적용 : <span> <a>*/
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.s2 {
+    display: block; /* 한 줄 차지 구역 : <div> <h> <p> <ul> <li> */
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.s3 {
+    display: inline-block; /* 한 줄에 해당 구역 포함 및 차지 : <input /> <button> <image /> */
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.s4 {
+    display: none; /* 표시 안함 */
+}
+
+.flexbox1 {
+    display: flex; /* 하위 요소들의 배치 방법 */
+}
+
+.box {
+    box-sizing: content-box; /* 구역 크기: 컨텐츠 기준 */
+    width: 500px; /* 안쪽 여백 빼고 500px */
+    padding: 10px; /* 안쪽 여백 추가 후 구역 전체 크기 : 520px (500 + 10 x 2) */
+}
+
+.box2 {
+    box-sizing: border-box; /* 구역 크기: 컨텐츠 + 안쪽 여백 기준 */
+    width: 500px; /* 안쪽 여백 포함한 500px */
+    padding: 10px;
+}

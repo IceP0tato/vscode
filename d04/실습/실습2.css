@@ -1,0 +1,25 @@
+#image {
+    width: 350px;
+    height: 450px;
+}
+
+.titleNum {
+    font-size: 32px;
+    font-weight: bold;
+    color: orange;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #0f6676;
+    color: white;
+}
+
+.emp {
+    color: orange;
+}

@@ -1,0 +1,33 @@
+/* CSS 선택자 */
+/* #id > .class > <markup> > * */
+
+* { /* 전체 선택자 */
+    color:red;
+}
+h4 { /* 마크업 선택자 */
+    color:blue;
+}
+.area1 { /* 클래스 선택자 (복수) */
+    color:yellow;
+}
+.area3 { /* 클래스 중복일 때는 코드 작성 순으로 마지막 코드 속성 적용 */
+    color:beige;
+}
+#area2 { /* 아이디 선택자 (단일) */
+    color:brown;
+}
+#area4 { /* 아이디 중복 시 적용되지 않음. 특정 부분에만 ID 사용 */
+    color:green;
+}
+h5, h6 { /* 다중 선택자 */
+    color:purple;
+}
+div > h3 { /* 자식 선택자 (div 아래의 h3 선택) */
+    color:aqua;
+}
+div h3 { /* 자손 선택자 (div 아래의 모든 h3 선택) */
+    color:coral;
+}
+div > .area5 {
+    color:springgreen;
+}

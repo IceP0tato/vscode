@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <table border="1" style="border-collapse:collapse" /> <!-- border 테두리, collapse 한 줄로-->
+        <tr> <!-- tablerow (가로행) -->
+            <th> <!-- tablehead (제목, 열)-->
+                제목1
+            </th>
+            <th>
+                제목2
+            </th>
+            <th>
+                제목3
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="2"> <!-- tabledata (셀) -->
+                데이터1
+            </td>
+            <td colspan="2">
+                데이터2
+            </td>
+            <!-- 데이터3 자리 병합됨 colspan -->
+            <!-- colspan 열 병합, rowspan 행 병합 -->
+        </tr>
+        <tr>
+            <!-- 데이터4 자리 병합됨 rowspan -->
+            <td>데이터5</td>
+            <td>데이터6</td>
+        </tr>
+    </table>
+</body>
+</html>

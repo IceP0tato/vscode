@@ -1,0 +1,178 @@
+/* ============= Base ============= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; 레이아웃 확인용 코드 */
+} /* 공통 */
+
+a {
+    color: black;
+    text-decoration: none;
+} /* 색상 변경, 밑줄 제거 */
+
+li {
+    list-style-type: none;
+} /* 점 제거 */
+
+/* ============= Header ============= */
+#header {
+    display: flex;
+    flex-direction: row; /* 생략 가능 (기본값) */
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    margin: 15px auto;
+} /* 헤더 */
+
+.top-menu {
+    display: flex;
+    justify-content: flex-end;
+} /* 헤더 우측 상단 */
+
+.main-menu {
+    display: flex;
+    justify-content: flex-end;
+} /* 헤더 우측 하단 */
+
+.main-menu > li {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px 30px 100px; /* 시계 방향 */
+} /* 헤더 우측 하단 내용 */
+
+/* ============= Image ============= */
+#main-img > img {
+    width: 100%;
+}
+
+/* ============= Main ============= */
+#main {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 30px auto;
+} /* 메인 */
+
+.sidebar {
+    width: 250px;
+} /* 사이드바 범위 */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+} /* 본문 범위 */
+
+.content > .leftbox {
+    width: 490px;
+} /* 좌측 본문 범위 */
+
+.content > .rightbox {
+    width: 490px;
+} /* 우측 본문 범위 */
+
+/* ============= Sidebar ============= */
+.sidebar > .title {
+    background-color: #0ca9a2;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+} /* 사이드바 타이틀 */
+
+.sidebar > .comment {
+    line-height: 160%;
+    padding: 5px;
+} /* 사이드바 타이틀 내용 */
+
+.sidebar > .searchbox {
+    padding: 0px;
+} /* 사이드바 상단 범위 */
+
+.sidebar > .searchbox > .search-input {
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px 7px;
+} /* 사이드바 검색창 */
+
+.sidebar > .searchbox > .search-btn {
+    padding: 4px 10px;
+} /* 사이드바 검색 버튼 */
+
+.sidebar > .subtitle {
+    border-top: 2px solid black;
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 18px;
+} /* 사이드바 메뉴 제목 */
+
+.sidebar > .sub-menu > li {
+    padding: 5px 10px;
+} /* 사이드바 메뉴 내용 */
+
+/* ============= Content ============= */
+.content .sub-title { /* 자손 선택자 */
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+} /* 본문 제목 */
+
+/* ============= Left Box ============= */
+.content > .leftbox > .board > li {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0px;
+} /* 본문 내용 */
+
+.content > .leftbox > .board {
+    margin-bottom: 50px;
+} /* 본문 범위 조절 */
+
+/* ============= Right Box ============= */
+.content > .rightbox > .product-list {
+    display: flex;
+    flex-wrap: wrap;
+} /* 이미지 배치 */
+
+.content > .rightbox > .product-list > .product {
+    width: 240px;
+    margin-bottom: 30px;
+} /* 이미지 범위 조절 */
+
+/* ============= Footer ============= */
+#footer {
+    background-color: #05344e;
+    color: white;
+    padding-top: 10px;
+} /* 푸터 배경, 글자색 */
+
+.footer-inner {
+    width: 1280px;
+    margin: 0 auto;
+} /* 푸터 범위 지정 */
+
+.footer-inner > .top-menu {
+    display: flex;
+    justify-content: flex-start;
+} /* 푸터 상단 */
+
+.footer-inner > .top-menu > li {
+    margin-right: 20px;
+} /* 푸터 상단 범위 조절 */
+
+.footer-inner > .bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+} /* 푸터 하단 */
+
+.footer-inner > .bottom-menu .footer-title {
+    margin-bottom: 3px;
+} /* 푸터 하단 제목 */
+
+.footer-inner > .bottom-menu li {
+    margin-bottom: 3px;
+} /* 푸터 하단 제목 */

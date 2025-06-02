@@ -1,0 +1,27 @@
+#image {
+    width: 350px;
+    height: 300px;
+}
+
+.container {
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.title {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.num {
+    font-weight: bold;
+    color: orange;
+}
