@@ -1,0 +1,46 @@
+/* 가상 클래스 */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+} /* 마우스를 올리면 적용 */
+
+a:visited {
+    color: orange;
+} /* 해당 링크에 방문한 적이 있으면 적용 */
+
+a:active {
+    color: blue;
+} /* 마우스 클릭 시 적용 */
+
+/* 가상 요소 (주로 이미지, 기호 장식용으로 사용) */
+.box1::before {
+    content: "[가상요소 시작점]";
+    font-weight: bold;
+}
+
+.box1::after {
+    content: "[가상요소 끝점]";
+    font-weight: bold;
+}
+
+.box2 {
+    list-style-type: none;
+}
+
+.box2 > li::before {
+    content: "※";
+    color: red;
+}
+
+.box3::before {
+    content: url("../d02/image/img2.jfif");
+}
+
+.box3::after {
+    content: "🙁";
+}

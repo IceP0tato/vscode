@@ -18,6 +18,7 @@ li {
 #header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 1280px;
     margin: 20px auto;
 }
@@ -42,17 +43,18 @@ li {
 
 #content-top > .content-inner {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 1280px;
     margin: 40px auto;
 }
 
-#content-top > .content-inner > img {
+#content-top > .content-inner > ul > li > img {
     padding-right: 15px;
 }
 
 #content-top > .content-inner > ul {
-    padding-right: 140px;
+    display: flex;
+    margin: 0 70px;
 }
 
 #content-down {
@@ -61,23 +63,23 @@ li {
 
 #content-down > .content-inner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 1280px;
     margin: 0 auto;
     padding: 35px 50px;
 }
 
 #content-down > .content-inner > ul {
-    padding: 0px 30px;
+    padding: 0px 20px;
 }
 
-#content-down > ul > li {
+#content-down > .content-inner > ul > li {
     display: flex;
 }
 
 .images {
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 150px;
 }
 
 /* ==================== Footer ==================== */

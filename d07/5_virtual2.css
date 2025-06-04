@@ -1,0 +1,81 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+/* 경계선 */
+.divider::before , .divider::after { /* 복수 선택자 */
+    content: ""; /* 가상 요소: 빈 문자열 */
+    width: 100px;
+    height: 1px; /* 선의 굵기 */
+    background-color: gray;
+    margin: 0 10px;
+}
+
+/* 드롭다운 */
+li {
+    list-style-type: none;
+}
+
+#header {
+    background-color: beige;
+}
+
+#header > ul {
+    display: flex;
+    justify-content: center;
+}
+
+#header > ul > li {
+    list-style-type: none;
+    padding: 20px;
+    position: relative;
+}
+
+#header .subMenu {
+    position: absolute;
+    top: 50px; /* 본 메뉴 50px 아래에 배치 */
+    left: 0px;
+    background-color: beige;
+    padding: 10px;
+    display: none;
+}
+
+/* 해당 .menu hover 시 subMenu 열기 */
+#header > ul > .menu:hover .subMenu {
+    display: block;
+}
+
+/* 드롭다운2 */
+#header2 {
+    background-color: skyblue;
+    position: relative;
+}
+
+#header2 > ul {
+    display: flex;
+    justify-content: center;
+}
+
+#header2 > ul > li {
+    padding: 10px;
+}
+
+#header2 .subMenu2 {
+    position: absolute; /* 가장 가까운 상위 요소의 relative를 갖는 요소 기준점 */
+    top: 40px;
+    width: 100%;
+    background-color: skyblue;
+    display: none; /* hover 전에는 숨기기 */
+}
+
+/* 메뉴 구역을 hover 했을 시 .subMenu2 보이기 */
+#header2 > ul:hover .subMenu2 {
+    display: block;
+}
