@@ -1,0 +1,47 @@
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    background-color: yellow;
+}
+
+.box2 {
+    background-color: red;
+    position: relative; /* (상대적) 본래 지정된 구역의 위치부터 시작 */
+    top: 50px;
+    left: 50px;
+} /* 기존 위치 기준으로 50px 아래로, 오른쪽으로 이동 */
+
+.box3 {
+    background-color: green;
+    position: absolute; /* (절대적) 부모(상위) 요소의 위치부터 시작 */
+    top: 50px;
+    left: 50px;
+}
+
+.box4 {
+    background-color: blue;
+    position: static; /* (정적/기본값) 코드 작성 순으로 배치 */
+    top: 50px;
+    left: 50px;
+} /* 위치 속성 사용 불가 */
+
+.box5 {
+    background-color: gray;
+    position: fixed; /* (고정) 디바이스의 위치 고정 */
+    bottom: 100px;
+    right: 100px;
+} /* 화면 기준으로 100px 위로, 왼쪽으로 이동 */
+
+.box6 { /* box6의 상위 요소는 parent */
+    background-color: beige;
+    position: absolute; /* 상위 요소 중에 가장 가까운 relative 상위 요소 기준 */
+    top: 100px;
+    right: 100px;
+} /* 화면 기준으로 100px 위로, 왼쪽으로 이동 */
+
+.parent { 
+    background-color: orange;
+    padding: 10px;
+    position: relative;
+} 
