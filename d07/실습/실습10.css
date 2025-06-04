@@ -1,0 +1,83 @@
+/* ================= Base ================= */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+#header {
+    width: 1280px;
+    height: 250px;
+}
+
+/* ================= Contents ================= */
+#contents {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#left-box {
+    display: flex;
+    width: 600px;
+}
+
+#right-box {
+    width: 680px;
+}
+
+#left-box > img {
+    width: 500px;
+}
+
+#right-box > div > img {
+    background-image: url('img/icons_instagram.png');
+    background-position: 0px -52px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 175px;
+    height: 51px;
+}
+
+#right-box > div > .input {
+    width: 250px;
+    height: 40px;
+    background-color: #eeeeee;
+    padding: 7px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    margin: 3px 0;
+}
+
+#right-box > div > #login {
+    width: 250px;
+    height: 40px;
+    background-color: #808dfb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ================= Footer ================= */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#footer li {
+    font-size: 12px;
+}
