@@ -1,0 +1,46 @@
+/* ================= 기본 설정 ================= */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border:1px solid red;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================= 본문 사이드바 (width: 240px) ================= */
+#sidebar {
+    width: 240px;
+    margin: 20px;
+} /* 사이드바 기본 설정 */
+
+/* ================= 본문 ================= */
+#main {
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+} /* 범위 설정 */
+
+/* ================= 본문 ================= */
+#contents {
+    width: 1040px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+} /* 본문 범위 조절 및 정렬 */
+
+.items {
+    width: 270px;
+    height: 190px;
+}
+
+.items > .item > .image {
+    width: 50%;
+    height: 50%;
+}
