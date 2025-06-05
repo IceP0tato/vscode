@@ -16,18 +16,21 @@
                 <img src="img/instagram.png" />
             </div>
             <div id="right-box">
-                <div><img /></div>
+                <div id="logo"> </div>
                 <div><input class="input" type="text" placeholder="전화번호, 사용자 이름 또는 이메일" /></div>
                 <div><input class="input" type="password" placeholder="비밀번호" /></div>
                 <div><input id="login" type="button" value="로그인" /></div>
                 <div><p>또는</p></div>
-                <div id="emp"><img src="img/icon_facebook.jfif" /> Facebook으로 로그인</div>
-                <div>비밀번호를 잊으셨나요?</div>
-                <div>계정이 없으신가요? <span class="register">가입하기</span></div>
+                <a href="https://www.facebook.com/login.php" id="facebook">
+                    <img src="img/icon_facebook.jfif" id="icon" />
+                    <div id="emp">Facebook으로 로그인</div>
+                </a>
+                <a href="https://www.instagram.com/accounts/password/reset/" id="emp2">비밀번호를 잊으셨나요?</a>
+                <div id="emp3">계정이 없으신가요? <a href="https://www.instagram.com/accounts/emailsignup/" class="register">가입하기</a></div>
             </div>
         </div>
         <div id="footer">
-            <ul class="footer-contents">
+            <ul id="footer-top">
                 <li><a href="https://about.meta.com/">Meta</a></li>
                 <li><a href="https://about.instagram.com/">소개</a></li>
                 <li><a href="https://about.instagram.com/blog/">블로그</a></li>
@@ -42,8 +45,14 @@
                 <li><a href="https://www.facebook.com/help/instagram/261704639352628">연락처 업로드 & 비사용자</a></li>
                 <li><a href="https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer">Meta Verified</a></li>
             </ul>
-            <ul class="footer-contents">
-                <li><input type="" value="한국어 ∨"/></li>
+            <ul id="footer-bottom">
+                <li>
+                    <select>
+                        <option>한국어</option>
+                        <option>English</option>
+                        <option>日本語</option>
+                    </select>
+                </li>
                 <li>ⓒ 2025 Instagram from Meta</li>
             </ul>
         </div>

@@ -1,0 +1,54 @@
+.box {
+    border: 2px solid red;
+    padding: 30px;
+}
+
+.box p {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid white;
+    width: 200px;
+}
+
+.color1 {
+    /* background-color: blue; */
+    /* background-color: rgb(0, 0, 255); */
+    /* background-color: #0000ff */
+    background-color: rgba(0, 0, 255, 0.5); /* red, green, blue, alpha (투명도 [1: 100%, 0: 0%]) */
+}
+
+.img1 {
+    background-image: url("img1.jpg");
+    background-position: center; /* 이미지 위치 */
+    background-repeat: no-repeat; /* 채우기 없음 */
+}
+
+.img2 {
+    background-image: url("pattern.jpg");
+    background-repeat: repeat; /* 빈 칸이 있으면 채움 (기본값) */
+}
+
+.img3 {
+    background-image: url("icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+}
+
+.img4 {
+    background-image: url("img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 스크롤을 해도 배경 이미지가 고정됨 (패럴랙스 효과) */
+}
+
+.box2 {
+    background-image: url("icons.png"); /* 지정된 요소의 사이즈가 필요함 */
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: -132px -298px;
+    border: 1px solid red;
+}
