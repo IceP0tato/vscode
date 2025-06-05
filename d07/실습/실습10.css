@@ -23,9 +23,9 @@ a {
 
 /* ================= Contents ================= */
 #contents {
+    width: 1280px;
     display: flex;
     justify-content: center;
-    width: 1280px;
     margin: 0 auto;
 }
 
@@ -33,24 +33,24 @@ a {
     display: flex;
 }
 
-#right-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-}
-
 #left-box > img {
     width: 500px;
     margin-right: 50px;
 }
 
+#right-box {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #right-box > #logo {
+    width: 175px;
+    height: 51px;
     background-image: url('img/icons_instagram.png');
     background-position: 0px -52px;
     background-repeat: no-repeat;
     background-size: auto;
-    width: 175px;
-    height: 51px;
     margin: 20px auto;
 }
 
@@ -58,10 +58,10 @@ a {
     width: 300px;
     height: 40px;
     background-color: #fafafa;
-    padding: 7px;
     border: 1px solid #dddddd;
     border-radius: 3px;
     margin: 3px 0;
+    padding: 7px;
 }
 
 #right-box > div > #login {
@@ -81,28 +81,28 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    color: gray;
     font-size: 14px;
     font-weight: bold;
-    color: gray;
+    margin: 20px 0;
 }
 
 #right-box > div > p::before {
-    display: flex;
-    justify-content: space-between;
     content: "";
     width: 120px;
     height: 1px;
+    display: flex;
+    justify-content: space-between;
     background-color: lightgray;
     margin-right: 10px;
 }
 
 #right-box > div > p::after {
-    display: flex;
-    justify-content: space-between;
     content: "";
     width: 120px;
     height: 1px;
+    display: flex;
+    justify-content: space-between;
     background-color: lightgray;
     margin-left: 10px;
 }
@@ -114,23 +114,23 @@ a {
     align-items: center;
 }
 
-#right-box > a > #emp {
-    font-size: 16px;
-    font-weight: bold;
-    color: #808dfb;
-    margin: 15px 0px;
-}
-
 #right-box > a > #icon {
     width: 24px;
     height: 24px;
     margin-right: 5px;
 }
 
+#right-box > a > #emp {
+    color: #808dfb;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
 #right-box > #emp2 {
+    width: 300px;
     display: flex;
     justify-content: center;
-    width: 300px;
     color: #808dfb;
     margin-top: 10px;
 }
@@ -150,12 +150,12 @@ a {
 
 /* ================= Footer ================= */
 #footer {
+    width: 1280px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1280px;
-    margin: 0 auto;
     color: grey;
+    margin: 0 auto;
 }
 
 #footer-top {
