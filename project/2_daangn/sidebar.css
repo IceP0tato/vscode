@@ -137,6 +137,7 @@ a {
     background-color: white;
     border: 1px solid #eeeeee;
     border-radius: 30px;
+    cursor: pointer;
 } /* 가격 버튼 디자인 */
 
 .input_price {
@@ -153,4 +154,3 @@ a {
     font-size: 14px;
     text-decoration: underline;
 } /* 적용하기 버튼 */
-
