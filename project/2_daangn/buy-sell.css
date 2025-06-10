@@ -35,18 +35,18 @@ a {
     margin: 0 auto;
 } /* 본문 제목 범위 설정 */
 
-#main_menu {
+.main_menu {
     color: grey;
     margin: 10px 0;
     margin-left: 20px;
     font-weight: unset;
 } /* 제목 상단 회색 글씨 */
 
-#main_menu > span {
+.main_menu > span {
     font-weight: bold;
 } /* 제목 상단 회색 글씨 (일부 볼드체) */
 
-#main_title {
+.main_title {
     margin-bottom: 20px;
     margin-left: 20px;
 } /* 제목 하단 큰 글씨 */
