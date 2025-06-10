@@ -27,6 +27,30 @@ a {
     margin: 0 auto;
 } /* 범위 설정 */
 
+/* ================= 본문 제목 ================= */
+#title {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    margin: 0 auto;
+} /* 본문 제목 범위 설정 */
+
+#main_menu {
+    color: grey;
+    margin: 10px 0;
+    margin-left: 20px;
+    font-weight: unset;
+} /* 제목 상단 회색 글씨 */
+
+#main_menu > span {
+    font-weight: bold;
+} /* 제목 상단 회색 글씨 (일부 볼드체) */
+
+#main_title {
+    margin-bottom: 20px;
+    margin-left: 20px;
+} /* 제목 하단 큰 글씨 */
+
 /* ================= 본문 컨텐츠 ================= */
 #contents {
     width: 1040px;
@@ -43,6 +67,7 @@ a {
     width: 220px;
     margin: 10px;
     padding-bottom: 15px;
+    cursor: pointer;
 } /* 아이템 크기 및 범위 조절 */
 
 .image_box {
