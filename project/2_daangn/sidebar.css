@@ -16,7 +16,7 @@ a {
 /* ================= 본문 ================= */
 #main {
     display: flex;
-    width: 1280px;
+    width: 1240px;
     margin: 0 auto;
 } /* 범위 설정 */
 
@@ -141,7 +141,7 @@ a {
 } /* 가격 버튼 디자인 */
 
 .input_price {
-    width: 100px;
+    width: 85px;
     margin-top: 15px;
     margin-bottom: 5px;
     padding: 8px 10px;

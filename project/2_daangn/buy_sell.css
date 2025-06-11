@@ -23,7 +23,7 @@ a {
 /* ================= 본문 ================= */
 #main {
     display: flex;
-    width: 1280px;
+    width: 1240px;
     margin: 0 auto;
 } /* 범위 설정 */
 
@@ -31,8 +31,9 @@ a {
 #title {
     display: flex;
     flex-direction: column;
-    width: 1280px;
+    width: 1240px;
     margin: 0 auto;
+    margin-top: 80px;
 } /* 본문 제목 범위 설정 */
 
 .main_menu {
@@ -53,7 +54,7 @@ a {
 
 /* ================= 본문 컨텐츠 ================= */
 #contents {
-    width: 1040px;
+    width: 1000px;
     margin: 20px auto;
 } /* 본문 범위 조절 및 정렬 */
 
@@ -90,6 +91,7 @@ a {
 } /* 아이템 이미지 호버 시 애니메이션 적용 */
 
 .item_name {
+    font-size: 15px;
     margin-top: 7px;
 } /* 아이템 이름 간격 조절 */
 
@@ -105,7 +107,7 @@ a {
 } /* 아이템 위치 및 올린 시간 글자색 및 폰트 크기, 간격 조절 */
 
 .more_button {
-    width: 1000px;
+    width: 960px;
     background-color: #f3f4f5;
     border: none;
     border-radius: 7px;
@@ -119,3 +121,8 @@ a {
 .more_button:hover {
     background-color: #e3e4e5;
 } /* 더보기 버튼 호버 시 색상 변경 */
+
+/* ================= 하단 이미지 ================= */
+#bottom_image {
+    margin: 40px 0;
+} /* 하단 이미지 간격 조절 */
