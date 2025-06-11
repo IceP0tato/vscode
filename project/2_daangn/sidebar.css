@@ -13,12 +13,12 @@ a {
     text-decoration: none;
 }
 
-/* ================= 본문 ================= */
-#main {
-    display: flex;
-    width: 1240px;
-    margin: 0 auto;
-} /* 범위 설정 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* ================= 본문 사이드바 (width: 240px) ================= */
 #sidebar {
@@ -132,7 +132,7 @@ a {
 } /* 카테고리, 가격 탭 간격 조절 */
 
 .button_price {
-    padding: 10px 15px;
+    padding: 7px 15px;
     margin: 5px 0;
     background-color: white;
     border: 1px solid #eeeeee;

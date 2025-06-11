@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
 }
 
 li {
@@ -14,11 +13,12 @@ a {
     text-decoration: none;
 }
 
-/* ================= 본문 사이드바 (width: 240px) ================= */
-#sidebar {
-    width: 240px;
-    margin: 20px;
-} /* 사이드바 기본 설정 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* ================= 본문 ================= */
 #main {
@@ -40,7 +40,8 @@ a {
     color: grey;
     margin: 10px 0;
     margin-left: 20px;
-    font-weight: unset;
+    font: 'Pretendard-Regular';
+    font-weight: normal;
 } /* 제목 상단 회색 글씨 */
 
 .main_menu > span {
@@ -48,6 +49,7 @@ a {
 } /* 제목 상단 회색 글씨 (일부 볼드체) */
 
 .main_title {
+    font: 'Pretendard-Regular';
     margin-bottom: 20px;
     margin-left: 20px;
 } /* 제목 하단 큰 글씨 */
@@ -123,7 +125,7 @@ a {
 } /* 더보기 버튼 호버 시 색상 변경 */
 
 /* ================= 하단 이미지 ================= */
-#bottom_image {
+#bottom_banner {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -132,7 +134,7 @@ a {
     margin-top: 60px;
 } /* 하단 이미지 간격 조절 */
 
-#bottom_wrap {
+#banner_wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,24 +142,26 @@ a {
     margin: 0 auto;
 }
 
-.bottom_image_top {
+.banner_top {
+    font: 'Pretendard-Regular';
     font-size: 32px;
     font-weight: bold;
     color: orangered;
 }
 
-.bottom_image_bottom {
+.banner_bottom {
+    font: 'Pretendard-Regular';
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-.bottom_image {
+.banner_icon {
     width: 120px;
     height: 40px;
     cursor: pointer;
 }
 
-.bottom_right_image {
+.banner_image {
     height: 360px;
 }
