@@ -20,7 +20,44 @@ a {
     font-weight: 400;
     font-style: normal;
 }
+/* ================= 본문 ================= */
+#main {
+    display: flex;
+   max-width: 1240px;
+    margin: 0 auto;
+} /* 범위 설정 */
 
+/* ================= 본문 제목 ================= */
+#title {
+    display: flex;
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-top: 30px;
+} /* 본문 제목 범위 설정 */
+
+.main_menu {
+    color: grey;
+    margin: 10px 0;
+    margin-left: 20px;
+    font: 'Pretendard-Regular';
+    font-weight: normal;
+} /* 제목 상단 회색 글씨 */
+
+.main_menu > span {
+    font-weight: bold;
+} /* 제목 상단 회색 글씨 (일부 볼드체) */
+
+.main_title {
+    font: 'Pretendard-Regular';
+    margin-bottom: 20px;
+    margin-left: 20px;
+} /* 제목 하단 큰 글씨 */
+
+/* ================= 본문 컨텐츠 ================= */
+#contents {
+    width: 1000px;
+    margin: 20px auto;
+} /* 본문 범위 조절 및 정렬 */
 /* ================= 본문 사이드바 (width: 240px) ================= */
 #sidebar {
     width: 240px;

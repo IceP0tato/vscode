@@ -40,6 +40,7 @@ position: fixed;
     top: 0;
     left: 0; 
     width: 80%; 
+    min-width: 900px;
     height: 72px; 
     background-color: white; 
     max-width: 1240px;

@@ -1,6 +1,6 @@
 .job_list {
-  max-width: 974px;
-  max-height: 133px;
+  /* max-width: 974px; */
+  /* max-height: 133px; */
   margin: 0 auto;
   align-items: self-end ;
 }
@@ -63,4 +63,9 @@
   gap: 12px;
   border-bottom: 1px solid #eee;
   padding: 16px 0;
+}
+
+/* 김진숙 코드 추가 수정  */
+#title{
+  padding: 30px 0;
 }
