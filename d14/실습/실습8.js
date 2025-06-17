@@ -13,7 +13,7 @@ console.log(product);
 
 // =====================================
 /*
-const product = { name, price, produce }; 라고 써도 작동함 (속성명과 자료 변수명이 일치할 때)
+  const product = { name, price, produce }; 라고 써도 작동함 (속성명과 자료 변수명이 일치할 때)
 */ 
 
 // Q2
@@ -35,12 +35,31 @@ let id = prompt("ID 입력:");
 let pw = prompt("PW 입력:");
 let name = prompt("name 입력:");
 
-if (members[0].id == id || members[1].id == id) {
+if (members[0].id == id || members[1].id == id) { // 유효성 검사
     console.log("이미 존재하는 아이디입니다.");
 } else {
     const member = { 'id': id, 'password': pw, 'name': name };
     console.log(member);
 }
+*/
+
+// =====================================
+/*
+  let member = {};
+  member.id = id;
+  member.pw = pw;
+  member.name = name;
+
+  let idCheck = false; // 중복 체크 (기본값: false)
+  for (let i=0; i<=members.length-1; i++) {
+    if (members[i].id == id) {
+      idCheck = true; // 중복 체크 (true로 변경)
+      break; // 반복문 종료
+    }
+  }
+
+  if (idCheck == false) {members.push(member)};
+  else {}
 */
 
 // Q3
@@ -58,11 +77,11 @@ const scores = [
   { name: 'C', math: 76, science: 78 }
 ];
 
-let average = 0;
+let sum = 0;
 for (let i=0; i<=scores.length-1; i++) {
-    average += scores[i].math;
+    sum += scores[i].math;
 }
-console.log(average);
+console.log(sum/scores.length);
 */
 
 // Q4
@@ -90,6 +109,10 @@ for (let i=0; i<=products.length-1; i++) {
         console.log("상품을 찾을 수 없습니다.");
     }
 }
+*/
+// =====================================
+/*
+  idCheck (boolean)을 이용해도 됨 (스위치 변수)
 */
 
 // Q5
@@ -186,12 +209,40 @@ const productsInfo = [
   { id: 3, price: 2500 }
 ]; */
 
+/* 작성한 코드
+const cart = [{ id: 1, quantity: 2 },{ id: 3, quantity: 1 }];
+const productsInfo = [
+  { id: 1, price: 1000 },
+  { id: 2, price: 5000 }, // 장바구니에 없는 상품
+  { id: 3, price: 2500 }
+];
+
+let totalPrice = 0;
+for (let i=0; i<=cart.length-1; i++) {
+  for (let j=0; j<=productsInfo.length-1; j++)
+    if (cart[i].id == productsInfo[j].id) {
+      totalPrice += cart[i].quantity * productsInfo[j].price;
+    }
+}
+console.log(totalPrice);
+*/
 
 // Q9
 /* 다음 votes 배열은 투표 결과를 나타냅니다. 각 후보가 몇 표를 받았는지 집계하여, 후보의 이름이 키이고 득표수가 값인 객체를 만들어 콘솔에 출력하시오.
 const votes = ['A', 'B', 'B', 'C', 'A', 'B', 'A'];
 // 출력 예시: { A: 3, B: 3, C: 1 } */
 
+/* 작성한 코드
+const votes = ['A', 'B', 'B', 'C', 'A', 'B', 'A'];
+
+const voteResult = { A: 0, B: 0, C: 0 };
+for (let i=0; i<=votes.length-1; i++) {
+  if (votes[i] == 'A') voteResult.A += 1;
+  else if (votes[i] == 'B') voteResult.B += 1;
+  else if (votes[i] == 'C') voteResult.C += 1;
+}
+console.log(voteResult);
+*/
 
 // Q10
 /* webtoons 배열의 데이터를 이용하여, 각 웹툰의 평점을 별(★, ☆)로 시각화하여 HTML에 출력하시오.
@@ -209,3 +260,25 @@ const webtoons = [
    전지적 독자 시점 ★★★★★★★★★☆
 */
 
+/* 작성한 코드
+const webtoons = [
+  { title: '나 혼자만 레벨업', rating: 9.8 },
+  { title: '유미의 세포들', rating: 9.9 },
+  { title: '전지적 독자 시점', rating: 9.7 }
+];
+
+let html = `<div> `;
+for (let i=0; i<=webtoons.length-1; i++) {
+  html += `${webtoons[i].title} `;
+  for (let j=1; j<=10; j++) {
+    if(j<=webtoons[i].rating) { // j <= {9.8, 9.9, 9.7}
+      html += `★`;
+    } else {
+      html += `☆`;
+    }
+  }
+  html += ` </div><div> `;
+}
+html += ` </div>`;
+document.write(html);
+*/
