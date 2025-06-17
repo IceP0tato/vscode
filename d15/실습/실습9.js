@@ -1,19 +1,3 @@
-const userInfo = [
-    { userCode: 1, id: 'devkim', username: '김개발' },
-    { userCode: 2, id: 'mrchoi', username: '최코딩' },
-    { userCode: 3, id: 'parksv', username: '박서버' }
-];
-const subProduct = [
-    { prodCode: 1, product: 'premium', price: '15000' },
-    { prodCode: 2, product: 'basic', price: '9900' },
-    { prodCode: 3, product: 'none', price: '' }
-];
-const subStatus = [
-    { statCode: 1, status: 'active', userCode: 1, prodCode: 1 },
-    { statCode: 2, status: 'expired', userCode: 2, prodCode: 2 },
-    { statCode: 3, status: '', userCode: 3, prodCode: 3 }
-];
-
 const 회원테이블 = [{회원코드 : 1, 아이디 : 'id1', 회원이름 : '김개발'},
                   {회원코드 : 2, 아이디 : 'id2', 회원이름 : '최코딩'},
                   {회원코드 : 3, 아이디 : 'id3', 회원이름 : '박서버'}];
@@ -24,29 +8,46 @@ const 구독상품테이블 = [{상품코드 : 1, 상품명 : '프리미엄', �
 
 const 구독로그테이블 = [{구독번호 : 1, 회원코드 : 1, 상품코드 : 1, 구독종료일 : '2025-06-20' },
                   {구독번호 : 2, 회원코드 : 2, 상품코드 : 2, 구독종료일 : '2025-06-15' } ];
+const today = '2025-06-17';
 
-let html = `<h1>회원 구독 상태 대시보드</h1>`;
-for (let i=0; i<=userInfo.length-1; i++) {
-    html += `<hr />`
-    html += `<h2>${userInfo[i].username}</h2>`;
-    html += `<ul>`;
+for (let i=0; i<=회원테이블.length-1; i++) {
+    console.log(i);
+    let 회원 = 회원테이블[i];
 
-    if(subProduct[i].product == 'premium')
-        html += `<li>구독 상품: 프리미엄 `;
-    else if (subProduct[i].product == 'basic')
-        html += `<li>구독 상품: 베이직 `;
-    else {
-        html += `</ul>구독 내역이 없습니다.`;
-        continue;
+    let 구독상태 = false;
+    let 구독상품코드 = -1;
+    let 구독활성화 = '';
+    for (let j=0; j<=구독로그테이블.length-1; j++) {
+        let 구독로그 = 구독로그테이블[j];
+
+        if (회원.회원코드 == 구독로그.회원코드) {
+            구독상태 = true;
+            구독상품코드 = 구독로그.상품코드;
+            
+            if(구독로그.구독종료일 < today){
+                구독활성화 = "만료";
+            } else {
+                구독활성화 = "활성";
+            }
+        }
     }
-    html += `(월 ${subProduct[i].price}원)</li>`;
 
-    html += `<li> 상태: `;
-    if(subStatus[i].status == 'active')
-        html += `<span style="font-weight: bold; color: green;">활성</span>`;
-    else if (subStatus[i].status == 'expired')
-        html += `<span style="font-weight: bold; color: grey;">만료</span>`;
+    document.write('<hr />');
+    let html = `<h3> ${회원.회원이름} </h3>`;
 
-    html += `</li></ul>`
+    if (구독상태 == true) {
+        for (let index=0; index<=구독상품테이블.length-1; index++) {
+            let 상품정보 = 구독상품테이블[index];
+            if (상품정보.상품코드 == 구독상품코드) {
+                html += `<ul>
+                            <li> 구독상품 : ${상품정보.상품명} (${상품정보.가격}) </li>
+                            <li> 상태 : ${구독활성화} </li>
+                        </ul>`
+            }
+        }
+    } else [
+        html += `<div> 구독 내역이 없습니다.`
+    ]
+    
+    document.write(html);
 }
-document.write(html);
