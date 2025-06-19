@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+</head>
+<body>
+    <h1> 전화번호부 </h1>
+    <div> <!-- 등록 영역 -->
+        <h3> 등록 </h3>
+        <div>이름: <input type="text" id="nameInput" /></div>
+        <div>전화번호: <input type="text" id="pnoInput" /></div>
+        <div>메모: <input type="text" id="memoInput"/></body>
+        <div><button onclick="submit();">등록</button></html>
+    </div> <!-- 등록 영역 end-->
+    <hr />
+    <div> <!-- 출력 영역 -->
+        <h3> 출력 </h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>전화번호</th>
+                    <th>메모</th>
+                </tr>
+            </thead>
+            <tbody id="contentBody">
+
+            </tbody>
+        </table>
+    </div> <!-- 출력 영역 end -->
+    <script src="./실습13.js"></script>
+</body>
+</html>
