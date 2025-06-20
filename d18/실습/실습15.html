@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <style>
+        #main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main">
+            <div id="main_department"> <!-- 부서 관리 -->
+                <div> <!-- 부서 등록 -->
+                    <input id="deptInput" type="text" placeholder="부서 이름 입력" />
+                    <button onclick="addDept()">추가</button>
+                </div>
+                <div> <!-- 부서 목록 -->
+                    <table>
+                        <thead>
+                            <th>부서명</th>
+                            <th>관리</th>
+                        </thead>
+                        <tbody>
+                            <td>임시팀</td>
+                            <td><button onclick="editDept()">수정</button><button onclick="deleteDept()">삭제</button></td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="main_employee"> <!-- 사원 관리 -->
+                <div> <!-- 사원 등록 -->
+                    <input id="nameInput" type="text" placeholder="이름 입력" />
+                    <input id="titleInput" type="text" placeholder="직급 입력" />
+                    <select id="deptSelect">
+                        <option>부서1</option>
+                        <option>부서2</option>
+                    </select>
+                    <input id="imgInput" type="file" />
+                    <button onclick="addEmp()">등록</button>
+                </div>
+                <div> <!-- 사원 목록 -->
+                    <table>
+                        <thead>
+                            <th>사진</th>
+                            <th>이름</th>
+                            <th>부서</th>
+                            <th>직급</th>
+                            <th>관리</th>
+                        </thead>
+                        <tbody>
+                            <td><img src="https://placehold.co/100x100" /></td>
+                            <td>이름내용</td>
+                            <td>부서내용</td>
+                            <td>직급내용</td>
+                            <td><button>수정</button><button>삭제</button></td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="main_vacation"> <!-- 휴가 관리 -->
+                <div> <!-- 휴가 신청 -->
+                    <select id="empSelect">
+                        <option>사원1</option>
+                        <option>사원2</option>
+                    </select>
+                    <input id="startInput" type="date" />휴가 시작일
+                    <input id="endInput" type="date" />휴가 종료일
+                    <input id="reasonInput" type="text" placeholder="휴가 사유" />
+                    <button onclick="addVac()">신청</button>
+                </div>
+                <div id="vacation_list"> <!-- 휴가 신청 전체 목록 -->
+                    <ul>
+                        <li>사원이름</li>
+                        <li>휴가기간</li>
+                        <li>사유</li>
+                        <li><button onclick="cancelVac()">신청취소</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./실습15.js"></script>
+</body>
+</html>
