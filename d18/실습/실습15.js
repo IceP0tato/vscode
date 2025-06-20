@@ -131,7 +131,7 @@ function deleteDept(deptId) {
                 alert('직원이 존재하는 부서는 삭제할 수 없습니다.');
                 console.log("Department Delete Failed: 부서에 직원이 존재함");
                 return;
-            }
+            } // TODO
         }
 
         if (department[i].deptId == deptId) {
