@@ -126,12 +126,12 @@ function editDept(deptId) {
 
 function deleteDept(deptId) {
     for (let i=0; i<=department.length-1; i++) {
-        for (let j=0; j<=employee.length-1; i++) {
-            if (department[i].deptId == employee[j].deptId) {
+        for (let j=0; j<=employee.length-1; j++) {
+            if (deptId == employee[j].deptId) {
                 alert('직원이 존재하는 부서는 삭제할 수 없습니다.');
                 console.log("Department Delete Failed: 부서에 직원이 존재함");
                 return;
-            } // TODO
+            } 
         }
 
         if (department[i].deptId == deptId) {
@@ -224,8 +224,6 @@ function editEmp(empId) {
                 console.log("Employee Edit Failed: 비어있는 필드가 있음");
                 return;
             }
-
-            // 부서, 사진 수정 TODO
 
             employee[i].name = name;
             employee[i].title = title;
