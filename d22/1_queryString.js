@@ -22,3 +22,7 @@ function move() {
 let url4 = new URLSearchParams(location.search);
 console.log(url4.get('sort'));
 console.log(url4.get('code'));
+
+const userData = [
+    { id: 1, nickname: 'test', password: '1234' }
+]
