@@ -1,0 +1,22 @@
+회원제
+회원가입 -> ID, PW 입력 -> 회원가입 -> localStorage에 ID, PW 저장 ->
+로그인 -> ID, PW 입력 -> 일치 여부 확인 -> 일치 시 <ID 가져오기>
+ID : 헤더에서 다방면으로 사용됨, 게시글 작성 시 기록됨, 게시글 수정, 삭제 여부 체크용
+
+게시글 작성
+제목, 영화제목, 내용, 사진, 별점, 스포여부 -> 직접 입력
+번호, 작성일자, 작성자 ID -> 자동 입력
+postList = { pid, uid, title, movieTitle, desc, image, rating, isSpoiler, date }
+
+게시글 목록
+번호, 제목 (스포여부), 영화제목, 별점, 작성일자 -> 출력
+postList = { pid, title, isSpoiler, movieTitle, rating, date }
+
+게시글 글쓰기
+로그인일 시 -> write.html로 이동 (넘겨주는 값 불필요)
+아닐 시 -> 로그인 필요 메세지 -> login.html로 이동
+
+게시글 삭제
+관리자일 시 -> 지울 게시글 번호 prompt -> 존재 여부 확인 -> 삭제 -> 목록 불러오기
+아닐 시 -> 삭제 버튼이 표시가 안됨. 존재하지 않을 시 -> 없는 페이지 -> return
+
